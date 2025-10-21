@@ -218,4 +218,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     acdb_cal_acdb_cal_symlink \
-    qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_symlink
+    qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_symlink \
+    mixer_paths_mixer_paths_pineapple_mtp_symlink \
+    resourcemanager_resourcemanager_pineapple_mtp_symlink \
+    usecaseKvManager_usecaseKvManager_symlink
