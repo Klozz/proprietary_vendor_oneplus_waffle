@@ -149,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_8.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_8.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_9.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_9.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
-    vendor/oneplus/waffle/proprietary/odm/etc/resourcemanager.xml:$(TARGET_COPY_OUT_ODM)/etc/resourcemanager.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/json_list:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/json_list \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/lanai_mtp_ak09919.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lanai_mtp_ak09919.json \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/lanai_mtp_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lanai_mtp_alsps.json \
@@ -170,7 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/waffle_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waffle_qrd_ois_system.json \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/oneplus/waffle/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0a \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0c \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0e \
@@ -219,6 +217,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     acdb_cal_acdb_cal_symlink \
     qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_symlink \
-    mixer_paths_mixer_paths_pineapple_mtp_symlink \
-    resourcemanager_resourcemanager_pineapple_mtp_symlink \
-    usecaseKvManager_usecaseKvManager_symlink
+    mixer_paths_mixer_paths_pineapple_mtp_symlink
