@@ -15,16 +15,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/camera_engmode.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/camera_engmode.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/camera_unit_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/camera_unit_feature_config.protobuf:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_feature_config.protobuf \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/config/imx581:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx581 \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/imx615:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx615 \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/config/lyt808:$(TARGET_COPY_OUT_ODM)/etc/camera/config/lyt808 \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_camera_algo_traversal_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_traversal_config.json \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_camera_preview_decision_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_preview_decision_config.json \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/oplus_preview_decision_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_preview_decision_params.json \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/config/ov64b40_tele:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov64b40_tele \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/quick_visibility_white_list:$(TARGET_COPY_OUT_ODM)/etc/camera/config/quick_visibility_white_list \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
