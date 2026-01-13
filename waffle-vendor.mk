@@ -9,7 +9,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/fusionlight.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight.json \
     vendor/oneplus/waffle/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/display_apollo_list_AA545_P_3_A0005_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AA545_P_3_A0005_dsc_cmd_mode_panel.xml \
-    vendor/oneplus/waffle/proprietary/odm/etc/Custom_LUT_hlg.cube:$(TARGET_COPY_OUT_ODM)/etc/Custom_LUT_hlg.cube \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -1126,11 +1125,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/waffle/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
-    vendor/oneplus/waffle/proprietary/odm/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube:$(TARGET_COPY_OUT_ODM)/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube \
     vendor/oneplus/waffle/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
-    vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14_low.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm17.txt \
@@ -1779,7 +1776,6 @@ PRODUCT_PACKAGES += \
     libdepthcomputation \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
     libdpp_manager \
@@ -1796,7 +1792,6 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhdrvivid \
-    libhistogram \
     libhme \
     libhwconfigurationutil_vendor \
     libhwcsensor \
@@ -1824,13 +1819,9 @@ PRODUCT_PACKAGES += \
     libopencv \
     libopencv3a \
     libopestriping \
-    libpwirisfeature_vendor \
-    libpwirishal \
-    libpwirishalwrapper_vendor \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
-    libqdutils \
     libqll \
     libqll10 \
     libqllengine \
@@ -1839,14 +1830,10 @@ PRODUCT_PACKAGES += \
     libqsegnet \
     libqshcamera \
     librcmask \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
-    libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsfeShiftExtrapolation \
     libsgutils2 \
     libsnapdragoncolor-manager \
@@ -1879,12 +1866,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
-    vendor.pixelworks.hardware.display@1.0_vendor \
-    vendor.pixelworks.hardware.display@1.1_vendor \
-    vendor.pixelworks.hardware.display@1.2_vendor \
-    vendor.pixelworks.hardware.feature-V1-ndk_vendor \
-    vendor.pixelworks.hardware.feature@1.0_vendor \
-    vendor.pixelworks.hardware.feature@1.1_vendor \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -2094,18 +2075,6 @@ PRODUCT_PACKAGES += \
     libpdCustomParamParser \
     libpngwrapper \
     libportrait_repair_qnn \
-    libpwirisIoctlWrapper \
-    libpwirisPCS \
-    libpwiriscalibrate \
-    libpwirisfeature \
-    libpwirisfeaturehal \
-    libpwirishalwrapper \
-    libpwirispq \
-    libpwirisservicei7 \
-    libpwirisservicei7p \
-    libpwirisservicesi \
-    libpwirissoft \
-    libpwsoftirisPCS \
     libqsh.utils \
     libremosaic_wrapper \
     libroi \
@@ -2113,7 +2082,6 @@ PRODUCT_PACKAGES += \
     libsaveshaderbin \
     libsharebuffer \
     libsharebuffer_impl \
-    libsnapdragoncolor-pxlw \
     libsnpe_loader \
     libstblur_api \
     libstblur_capture_api \
@@ -2141,17 +2109,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
-    vendor.pixelworks.hardware.display-V2-ndk \
-    vendor.pixelworks.hardware.display-impl-i7 \
-    vendor.pixelworks.hardware.display-impl-i7p \
-    vendor.pixelworks.hardware.display-impl-si \
-    vendor.pixelworks.hardware.display-translate-V2-ndk \
-    vendor.pixelworks.hardware.display@1.0 \
-    vendor.pixelworks.hardware.display@1.1 \
-    vendor.pixelworks.hardware.display@1.2 \
-    vendor.pixelworks.hardware.feature-V1-ndk \
-    vendor.pixelworks.hardware.feature@1.0 \
-    vendor.pixelworks.hardware.feature@1.1 \
     libQnnHtpV75Skel.aiboost \
     libaiboostubwc_skel.aiboost \
     capi_v3_oprec \
@@ -2288,20 +2245,15 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
-    vendor.pixelworks.hardware.display-service.xml \
-    vendor.pixelworks.hardware.feature-service.xml \
     feature_enabler_client \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
     init.qti.graphics \
     ppd \
     qdcmss \
     cwb_utils_aidl \
     vendor.oplus.hardware.cammidasservice-V1-service \
-    vendor.oplus.hardware.displaypanelfeature-service \
-    vendor.pixelworks.hardware.feature-service \
-    irisConfig
+    vendor.oplus.hardware.displaypanelfeature-service
 
 PRODUCT_PACKAGES += \
     acdb_cal_acdb_cal_symlink \
