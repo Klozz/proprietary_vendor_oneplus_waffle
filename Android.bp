@@ -1159,7 +1159,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so"],
-			shared_libs: ["libc++", "libcamera_metadata", "libcamxcommonutils", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libsync", "libz", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcamera_metadata", "libcamxcommonutils", "libchilog", "libcom.qti.chinodeutils", "libcutils", "liblog", "libsync", "libhwconfigurationutil_vendor", "libz", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6012,23 +6012,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libDeVIS.so"],
 			shared_libs: ["liblog", "libm", "libdl", "libc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libDocRectification",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libDocRectification.so"],
-			shared_libs: ["liblog", "libc", "libz", "libdl", "libm", ],
 		},
 	},
 	compile_multilib: "64",
