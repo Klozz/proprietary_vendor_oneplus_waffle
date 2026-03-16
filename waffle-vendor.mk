@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
+    vendor/oneplus/waffle/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/CameraOemConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraOemConfiguration.config \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/FaceRestoreConfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/FaceRestoreConfig.json \
@@ -1128,8 +1129,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/waffle/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
+    vendor/oneplus/waffle/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube:$(TARGET_COPY_OUT_ODM)/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube \
+    vendor/oneplus/waffle/proprietary/odm/etc/init/dms-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dms-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
+    vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
@@ -1251,6 +1255,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_7.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_7.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_8.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_8.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_9.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_9.txt \
+    vendor/oneplus/waffle/proprietary/odm/etc/media_codecs_c2_dolby_audio.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_c2_dolby_audio.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -2056,14 +2061,26 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcalculator \
     libcalculator_htp \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_ddpdec_sp \
+    libcodec2_store_dolby_sp \
     libcreateFDCLitecachebin \
     libcreateFDCcachebin \
     libcreatebin \
     libcvface_api \
+    libdapparamstorage_sp \
+    libdeccfg_sp \
     libdisplayaidlapis \
     libdisplaycolorfeature \
     libdisplayfossfeature_nature \
+    libdlbdsservice_sp \
+    libdlbpreg_sp \
+    libdmshal \
     libdolbyclstc \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyencoderprocessor \
+    libdolbyottcameracontrol \
     libdpaservice \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
@@ -2104,6 +2121,8 @@ PRODUCT_PACKAGES += \
     libpwirisservicesi \
     libpwirissoft \
     libpwsoftirisPCS \
+    libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
     libqsh.utils \
     libremosaic_wrapper \
     libroi \
@@ -2113,6 +2132,7 @@ PRODUCT_PACKAGES += \
     libsharebuffer_impl \
     libsnapdragoncolor-pxlw \
     libsnpe_loader \
+    libspatializerparamstorage \
     libstblur_api \
     libstblur_capture_api \
     libstface_datas \
@@ -2133,6 +2153,13 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libzlib \
+    libOplusSpatializer \
+    libdlbvol_sp \
+    liboplusupmixeffect \
+    libswdap_sp \
+    libswgamedap_sp \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby_sp.hardware.dmssp@2.0 \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
@@ -2280,12 +2307,14 @@ PRODUCT_PACKAGES += \
     snapTex2HWBinary \
     snapYUV420sp2RGBBinary \
     snapseparateYUV2RGBBinary \
+    dms-service.xml \
     manifest_displaycolorfeature_aidl.xml \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
+    vendor.dolby.media.c2@1.0-service.xml \
     vendor.pixelworks.hardware.display-service.xml \
     vendor.pixelworks.hardware.feature-service.xml \
     feature_enabler_client \
@@ -2295,6 +2324,8 @@ PRODUCT_PACKAGES += \
     ppd \
     qdcmss \
     cwb_utils_aidl \
+    vendor.dolby.dms.service \
+    vendor.dolby_sp.media.c2@1.0-service \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     vendor.pixelworks.hardware.feature-service \
