@@ -2404,7 +2404,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/com.qti.feature2.mfsr.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "libcommonchiutils", "android.hardware.graphics.common@1.1", "libhardware", "libhidlbase", "libhidltransport", "libcamera_metadata", "libcamxcommonutils", "libcamxsettingsmanager", "libqti_vndfwk_detect", "libutils", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "android.hardware.graphics.allocator-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libbinder_ndk", "libosensenativeproxy_client", "com.qti.chi.override", "libchilog", "libz", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "libcommonchiutils", "android.hardware.graphics.common@1.1", "libhardware", "libhidlbase", "libhidltransport", "libcamera_metadata", "libcamxcommonutils", "libcamxsettingsmanager", "libqti_vndfwk_detect", "libutils", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "android.hardware.graphics.allocator-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libbinder_ndk", "libosensenativeproxy_client", "com.qti.chi.override", "libchilog", "libhwconfigurationutil_vendor", "libz", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6407,7 +6407,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libOPAlgoCamSinglePortrait.so"],
-			shared_libs: ["libODNN", "liblog", "libz", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libz", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
