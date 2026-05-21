@@ -60,8 +60,6 @@
         <!--library name="vqe" path="libswvqe_v3_6.so"-->
         <!-- DOLBY END -->
         <!-- #endif OPLUS_FEATURE_DOLBY -->
-        <!-- OPLUS_FEATURE_SURROUND_AUDIO -->
-        <library name="ozo_processing" path="libozoprocessing.so"/>
         <!-- OPLUS_FEATURE_SURROUND_AUDIO END-->
         <!-- Wenjiang.Wang@MULTIMEDIA.AUDIOSERVER.EFFECT, 2022/08/29, add oplus upmixer -->
         <library name="opupmix" path="liboplusupmixeffect.so"/>
@@ -137,8 +135,6 @@
         <!-- effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"-->
         <!-- DOLBY END -->
         <!-- #endif OPLUS_FEATURE_DOLBY -->
-        <!-- OPLUS_FEATURE_SURROUND_AUDIO -->
-        <effect name="ozo" library="ozo_processing" uuid="7e384a3b-7850-4a64-a097-884250d8a737"/>
         <!-- OPLUS_FEATURE_SURROUND_AUDIO END-->
         <!-- Wenjiang.Wang@MULTIMEDIA.AUDIOSERVER.EFFECT, 2022/08/29, add oplus upmixer -->
         <effect name="oplusupmix" library="opupmix" uuid="7cfe368c-b120-47d5-b795-c8abb13bd381"/>
