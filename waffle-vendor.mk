@@ -1387,7 +1387,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b07 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b08 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.mdt \
+    vendor/oneplus/waffle/proprietary/vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_policy_configuration.xml \
+    vendor/oneplus/waffle/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    vendor/oneplus/waffle/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/oneplus/waffle/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
+    vendor/oneplus/waffle/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/display/DPU1020.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1020.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/display/DPU10__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU10__.xml \
@@ -1992,7 +1997,6 @@ PRODUCT_PACKAGES += \
     libXDocProcessSDK \
     libYTCommon \
     lib_geofencing \
-    lib_lvacfs \
     lib_rectify \
     libaecCustom \
     libaecCustomParamParser \
@@ -2101,7 +2105,6 @@ PRODUCT_PACKAGES += \
     libhyperlapse \
     libiceainr \
     libimgClarityEvaluate \
-    liblvacfs_wrapper \
     libmpbase \
     libmsnativefilter \
     libmvgcommon \
@@ -2335,6 +2338,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     acdb_cal_acdb_cal_symlink \
     qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel_symlink \
+    mixer_paths_mixer_paths_pineapple_mtp_symlink \
+    resourcemanager_resourcemanager_pineapple_mtp_symlink \
+    usecaseKvManager_usecaseKvManager_symlink \
     awb_parameter_default_awb_parameter_default_symlink64 \
     awb_parameter_qtech_imx581_wide_awb_parameter_qtech_imx581_wide_symlink64 \
     awb_parameter_qtech_imx615_front_awb_parameter_qtech_imx615_front_symlink64 \
